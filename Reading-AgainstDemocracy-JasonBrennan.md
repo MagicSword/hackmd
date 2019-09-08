@@ -2,23 +2,27 @@
 
 # 概述
 
+本書連結 [博客來: 反民主](https://www.books.com.tw/products/0010794173 "反民主 - 選票失能、理性失調、反思最神聖制度的狂亂與神話！")
+
 邊讀邊做個筆記心得。
 
 
-# Chapter 01 環境設定與網頁爬蟲初探
+# 目錄
 
- * 1-1 環境設定及套件安裝：Anaconda
- * 1-2 使用IDE：PyCharm
- * 1-3 使用Jupyter Notebook
- * 1-4 網頁文件解構與網頁爬蟲初探
-    * Anaconda 在 Windows 上算是個滿不錯的 Python 整合套件。
-    * Editor: Vim , Visual Studio Code
-    * IDE: PyCharm
-    * Jupyter Notebook 算是個 Ipython Web App，滿好用的。
-    * 網頁文件有幾個部分： Html 內容，CSS 樣式，JS 動態
-    * 書中用來讀網頁的程式庫是 requests，算是外部程式庫中簡單好用的。
-      Python 中內建的也是有 [urllib] (https://docs.python.org/3/library/urllib.html) 。
-
+* 導論　布倫南對民主制度的診斷與處方，以及欠我們的一份病理報告／葉浩（政治大學政治系副教授）
+* 台灣版序
+* 2017年版序
+* 前言暨誌謝
+  
+* 第一章　哈比人與政治流氓
+* 第二章　國家主義者的無知、不理性與資訊錯誤
+* 第三章　政治參與讓人墮落
+* 第四章　政治不會讓你我更有力量
+* 第五章　政治非詩
+* 第六章　我們有權擁有稱職的政府
+* 第七章　民主有足夠的能力嗎？
+* 第八章　知者治之
+* 第九章　彼此為敵
 
 
 
@@ -27,9 +31,11 @@
 
 # 參考連結
 
-1. [本書網站](https://jwlin.github.com/py-scraping-analysis-book/ch2/blog/blog.html)
-2. [本書Github](https://github.com/jwlin/py-scraping-analysis-book)
-3. [BeautifulSoup 文件] [BeautifulSoup]
+1. [葉浩（政治大學政治系副教授）：導讀《反民主》](https://opinion.udn.com/opinion/story/11664/3293713)
+2. [劉維人（自由譯者）：《反民主》譯後記](https://opinion.udn.com/opinion/story/12402/3293218)
+3. [陳方隅（密西根州大政治所博士候選人）：《反民主》書評：民主價值的練習題](http://whogovernstw.org/2018/08/09/fangyuchen29/http://)
+4. [謝世民（中正大學哲學系教授）：取消你的投票權，能換來更好的社會嗎？──評布倫南的《反民主》](https://opinion.cw.com.tw/blog/profile/390/article/7175http://)
+5. [Youtube ★完整版 ★ 一人一票的民主制度錯了嗎？【 反民主：選票失能、理性失調，反思最神聖制度的狂亂與神話！】](https://www.youtube.com/watch?v=2Ydg4uq6N1M)
 
 
 [google]: https://www.google.com "Search Engine"
