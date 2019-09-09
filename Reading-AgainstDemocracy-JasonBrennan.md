@@ -2,11 +2,13 @@
 title: 反民主 - 選票失能、理性失調、反思最神聖制度的狂亂與神話！Jason Brennan
 description: 反民主 - 選票失能、理性失調、反思最神聖制度的狂亂與神話！Jason Brennan
 image: https://hackmd.io/screenshot.png
-tags: reading, books, democracy
+tags: reading books democracy
 robots: noindex, nofollow
 lang: zh-tw
 ---
 
+- [ ] 初稿
+- [ ] 完成
 
 # 閱讀心得 ：反民主 - 選票失能、理性失調、反思最神聖制度的狂亂與神話！Jason Brennan
 
@@ -36,7 +38,27 @@ lang: zh-tw
 
 
 
-# Chapter 02 Beautiful Soup 講解與網頁解構
+# 第一章　哈比人與政治流氓
+
+* 哈比人 hobbits :政治冷感且無知，只希望過自已的日子，不常投票
+* 政治流氓 hooligans :對政治狂熱有如運動賽事。擁有強烈的固定世界觀、會為自已的立場辯護，但解釋其他立場卻無法讓異議者滿意。
+* 瓦肯人 vulcans :對政治有科學理性的思維。對政治有興趣，但是缺乏熱情。
+
+# 第二章　國家主義者的無知、不理性與資訊錯誤
+
+# 第三章　政治參與讓人墮落
+
+# 第四章　政治不會讓你我更有力量
+
+# 第五章　政治非詩
+
+# 第六章　我們有權擁有稱職的政府
+
+# 第七章　民主有足夠的能力嗎？
+
+# 第八章　知者治之
+
+# 第九章　彼此為敵
 
 
 # 參考連結
