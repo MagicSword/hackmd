@@ -1,8 +1,8 @@
 ---
 title: 反民主 - 選票失能、理性失調、反思最神聖制度的狂亂與神話！Jason Brennan
 description: 反民主 - 選票失能、理性失調、反思最神聖制度的狂亂與神話！Jason Brennan
-image: https://hackmd.io/screenshot.png
-tags: reading books democracy
+image: 
+tags: reading, books, democracy
 robots: noindex, nofollow
 lang: zh-tw
 ---
