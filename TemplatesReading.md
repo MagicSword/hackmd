@@ -1,6 +1,6 @@
 ---
-title: 	民族與民族主義 Eric J. Hobsbawm
-description: Nations and Nationalism since 1780，艾瑞克. 霍布斯邦(Eric J. Hobsbawm)著 ; 李金梅譯
+title: 	Templates Reading
+description: Nations and Nationalism since 1780
 image: 
 tags: Templates, reading
 robots: noindex, nofollow
