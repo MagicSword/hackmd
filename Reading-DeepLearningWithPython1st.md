@@ -113,11 +113,72 @@ Ch09 結語
 
 附錄 A 在 Ubuntu 上安裝 Keras 及相關套件
 附錄 B 在 EC2 GPU 虛擬主機上使用 Jupyter Notebook 開發機器學習專案
- 
+
+
+Source Code
+https://www.manning.com/books/deep-learning-with-python
+
+https://github.com/fchollet/deep-learning-with-python-notebooks
+
+中文範例
+http://www.flag.com.tw/bk/t/f9379
+
+**Bonus**
+初版 1、2 刷更新說明
+頁次	刊登日期與更新說明
+5-45	2018/6/12 (範例檔 F9379.zip 已更新)
+程式 5.23 的執行結果因為 Keras 版本而可能與圖 5.17 有差距, 在此提供 2 種解法：
+
+1. 將 conv_base.trainable = False 註解掉。
+2. 餵給 VGG16 的圖片像素值不要壓到 0-1 之間, 將 rescale=1./255 都註解掉。
+
+請在程式 5.23 中做以下的修改：
+
+```
+from keras.applications.imagenet_utils import preprocess_input # 新增這行
+
+train_gen = ImageDataGenerator(
+    # rescale=1.0/255, # 註解這行
+    preprocessing_function=preprocess_input, # 新增這行
+    height_shift_range=0.2,
+    width_shift_range=0.2,
+    zoom_range=0.2,
+    shear_range=0.2,
+    rotation_range=40,
+    horizontal_flip=True,
+    fill_mode='nearest'
+    )
+
+#test_datagen = ImageDataGenerator(1./255) # 註解這行
+test_datagen = ImageDataGenerator(preprocessing_function=preprocess_input) # 新增這行
+```
+
+
+## 論壇
+
+https://forums.manning.com/forums/deep-learning-with-python/
+
+# Ch01何謂深度學習？
+
+[A. M. Turing (1950) Computing Machinery and Intelligence. Mind 49: 433-460. ](https://www.csee.umbc.edu/courses/471/papers/turing.pdf)
+[論文筆記 Computing Machinery and Intelligence](https://walkccc.github.io/blog/2018/11/25/Papers/turing/)
+
+### 1-2-3
+Vladimir Vapnik and Corinna Cortes, “Support-Vector Networks,” Machine Learning 20, no. 3 (1995): 273–297.
+
+Vladimir Vapnik and Alexey Chervonenkis, “A Note on One Class of Perceptrons,” Automation and Remote Control 25 (1964).
+
+
+Graphviz preview
+1. dot.exe  `$dot -Tpdf hero.dot -o hero.pdf`
+3. VS Code GraphvizPreview "Ctrl+Shift+P->"Graphviz: Open Preview to the Side"
+
+> 將資料 向量化，然後用深度學習的方式，找出其中想要訓練的方式。 [name=Lin Miller]
+
 # 參考資料
-1. [決戰熱蘭遮][]
-2. [熱蘭遮城日誌][]
-3. 
+1. [Deep learning with Python forum](https://livebook.manning.com/book/deep-learning-with-python/about-this-book/)
+2. [arxiv.org](http://arxiv.org)
+3. [kaggle.com](kaggle.com)
 4. 
 
 
