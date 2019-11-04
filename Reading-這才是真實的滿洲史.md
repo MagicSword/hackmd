@@ -45,13 +45,46 @@ Task list: :smile:
 * │結語│
 * │年表│
 
- 
+# │前言│我們為什麼學習歷史？
+
+勝利者寫的歷史。
+
+# │序章│何謂滿洲？
+
+## 滿洲的民族
+
+* 女真、女直 (jusěn): 遼、金、元、明史書中稱滿洲地區的居民 
+* 滿洲(Manju)：清太祖 努爾哈齊，清太宗皇太極時改女真為滿洲
+* 滿洲(Manju)：如同 清有水部，滿洲可指民族、指人。滿州就單指滿族的土地了。
+* 滿洲國(Manju gurun):  gurun 指集團、指領民。或是 英文指的，Manchuria
+
+## 清朝權力結構的變化
+
+* 開始出現軍閥：太平天國之亂有關
+
+
+# │第一章│自日清戰爭至中華民國建國前
+
+# │第二章│中華民國建國後到滿洲國建國
+
+# │第三章│滿洲國建國、崩壞以及其後
+
+# │結語│
+
+# │年表│
+
+
+
+
 # 參考資料
 1. [決戰熱蘭遮][]
 2. [熱蘭遮城日誌][]
 3. 
 4. 
 
+
+## 參考書籍
+1. [The Manchu Way by Mark C. Elliott]("https://www.amazon.com/Manchu-Way-Banners-Identity-Imperial/dp/0804746842" "The Eight Banners and Ethnic Identity in Late Imperial China 1st Edition")
 
 
 [決戰熱蘭遮]: https://www.books.com.tw/products/0010773335 "決戰熱蘭遮"
