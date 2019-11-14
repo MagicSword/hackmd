@@ -61,17 +61,65 @@ Task list: :smile:
 第十七章 部署
 第十八章 其他的資源
 
-# 導論
 
-民族是什麼？書單
+# Tempe
+
+`add_url_rule(rule, endpoint=None, view_func=None, **options)`
 
 
- 
+
+## 第四章 Web 表單
+
+WTF
+https://flask-wtf.readthedocs.io/
+
+Flash
+https://www.w3schools.com/html/html_entities.asp
+https://dev.w3.org/html5/html-author/charref
+
+
+## 第五章 資料庫
+
+
+Database
+
+* MySQL: RDBMS
+* PostgresSQL : RDBMS
+* SQLite : RDBMS, filedb
+* Redis : key-value database, support by VMware
+* MongoDB : document-oriented database 
+* CouchDB : document-oriented NoSQL database,by Apache
+* DynamoDB : document-oriented NoSQL database,by Amazon, AWS
+
+
+DataBase Migrate
+SQLAlchemy.Alembic
+https://alembic.sqlalchemy.org/en/latest/
+Flask-Migrate
+https://flask-migrate.readthedocs.io/en/latest/
+
+## 第六章 Email
+
+寄信失敗
+low security login
+SMTP setting
+https://support.google.com/a/answer/2956491?hl=zh-Hant&authuser=1
+https://support.google.com/mail/answer/7126229?hl=zh-Hant
+https://www.youtube.com/watch?v=qqOgDPSD3jc&feature=youtu.be
+https://github.com/twtrubiks/Flask-Mail-example
+
 # 參考資料
 1. [作者 Miguel Grinberg 網站](blog.miguelgrinberg.com)
 2. [本書 github repo](https://github.com/miguelgrinberg/flasky)
-3. 
-4. 
+3. [Flask official site](https://flask.palletsprojects.com/)
+4. [Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+
+## 第七章 大型的 App 結構
+
+## 第八章 使用者身份驗證
+
+Salted Password
+https://crackstation.net/hashing-security.htm
 
 
 
