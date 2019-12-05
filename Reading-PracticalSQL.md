@@ -2,7 +2,7 @@
 title: SQL語法查詢入門｜挖掘數據真相征服大數據時代的第一本書
 description: Practical SQL
 image: 
-tags: reading, sql, postgresql
+tags: reading, sql, postgresql,database
 robots: noindex, nofollow
 lang: zh-tw
 ---
@@ -109,6 +109,9 @@ Task list: :smile:
 
 # 第2章｜用SELECT 開始探索資料
 教各位探索基本的SQL 查詢語法，包括如何排序及篩選資料。
+
+
+* `DISTINCT` : 唯一 關鍵字
 
 # 第3章｜了解資料類型
 解釋了如何設置資料表欄位來儲存特定型態的資料，從文字到各種形式的數字都有。
@@ -265,7 +268,9 @@ where c2010.county_fips is null;
 # 第8章｜利用群聚（Grouping）和總結
 （Summarizing）來擷取資訊 說明如何利用匯總函式，從年度調查中找出美國圖書館運用的趨勢。
 
-* Grouping  , summary
+* Grouping  , Summarizing
+* Grouping : 資料分組計算
+* Sumarizing : 
 
 # 第9章｜調查與修改資料 
 會以關於肉品、雞蛋及家禽生產商的記錄資料為例，探討如何找出和修正不完整或不正確的資料。
