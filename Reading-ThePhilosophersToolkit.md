@@ -2,7 +2,7 @@
 title: 哲學家的工具箱 - 如何論證、批判、避開邏輯謬誤？一套現代人必備的理性思考工具
 description: The Philosopher’ s Toolkit A Compendium of Philosophical Concepts and Methods
 image: 
-tags: Templates, reading
+tags: reading
 robots: noindex, nofollow
 lang: zh-tw
 ---
@@ -212,7 +212,7 @@ T => T
 1. [決戰熱蘭遮][]
 2. [熱蘭遮城日誌][]
 3. 
-4. 
+4.  
 
 
 
