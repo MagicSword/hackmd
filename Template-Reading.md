@@ -2,7 +2,7 @@
 title: TemplatesReading by Authur
 description: Lost Colony ：The Untold Story of 
 image: 
-tags: Reading,Templates 
+tags: reading,Templates 
 robots: noindex, nofollow
 lang: zh-tw
 ---
