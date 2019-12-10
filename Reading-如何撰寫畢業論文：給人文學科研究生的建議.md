@@ -2,7 +2,7 @@
 title: 如何撰寫畢業論文：給人文學科研究生的建議
 description: Come si fa una tesi di laurea Le materie umanistiche
 image: 
-tags: Reading,
+tags: reading,
 robots: noindex, nofollow
 lang: zh-tw
 ---
