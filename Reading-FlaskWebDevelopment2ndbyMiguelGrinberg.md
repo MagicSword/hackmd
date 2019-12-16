@@ -62,10 +62,92 @@ Task list: :smile:
 第十八章 其他的資源
 
 
-# Tempe
 
-`add_url_rule(rule, endpoint=None, view_func=None, **options)`
 
+## 第二章 基本 app 結構
+
+1. Flask app 初始化
+2. 路由、動態路由
+3. Web server, Debug mode, command line
+
+
+
+### [Flask 初始化](http://flask.palletsprojects.com/en/1.1.x/api/?highlight=flask#flask.Flask)
+
+```python
+class flask.Flask(
+        import_name, 
+        static_url_path=None, 
+        static_folder='static', 
+        static_host=None, 
+        host_matching=False, 
+        subdomain_matching=False,
+        template_folder='templates', 
+        instance_path=None,
+        instance_relative_config=False, 
+        root_path=None)
+```
+例子：`app = Flask(import_name)`
+`import_name` 可以是 
+1. `__name__` ，本檔的位置
+2. 或是指定模組的位置
+
+主要是指定 `Flask` 實體的位置，根目錄，用以定位其他資源的位置，`static`,`template`
+
+
+### 路由
+1. decorator `flask.Flask.route()`
+2. function: `flask.Flask.add_url_rule()`
+3. Werkzeug routing system : `flask.Flask.url_map`
+
+
+```python
+add_url_rule(rule, endpoint=None, view_func=None, provide_automatic_options=None, **options)
+```
+
+[URL Route Registrations.](https://flask.palletsprojects.com/en/1.1.x/api/#url-route-registrations "URL 註冊機制")
+
+### Request, response
+
+Flask context 全域變數
+1. `current_app`:app context 是運行中的 app 實例
+2. `g`:app context 處理 request 時，可當暫存區
+3. `request`:request context, request 物件
+4. `session`:request context, 用在各 request 間，記住使用者的資料
+
+
+### Flask command line
+
+[Flask 命令列模式](https://flask.palletsprojects.com/en/1.1.x/cli/?highlight=flask%20command)
+[Working with the shell](https://flask.palletsprojects.com/en/1.1.x/shell/?highlight=flask%20command)
+
+request hook : 可指定 request前，後作的動作
+Response: request 的回應
+
+## 第三章 模板
+
+主要是要把business logic、和presentation logic 內容分開。
+
+```python
+from flask import Flask,render_template
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+    
+@app.route('/user/<name>')
+def user(name):
+    return render_template('user.html',name=name)
+```
+
+### Jinja2 語法
+
+* functions : safe,capitalize,lower,upper,title,trim,striptags
+* 控制結構：if,else,endif;for,endfor;block,endblock
+* import template:extends 'base.html'
+
+### Flask-Bootstrap
+[Bootstrap][bootstrap]
 
 
 ## 第四章 Web 表單
@@ -73,12 +155,31 @@ Task list: :smile:
 WTF
 https://flask-wtf.readthedocs.io/
 
-Flash
-https://www.w3schools.com/html/html_entities.asp
-https://dev.w3.org/html5/html-author/charref
+* [flask_navbar](https://github.com/zcyuefan/flask-navbar) : 新版的flask-nav
+* [flask base](https://github.com/hack4impact/flask-base)
 
+HTMl Entity
+* https://www.w3schools.com/html/html_entities.asp
+* https://dev.w3.org/html5/html-author/charref
+
+
+Flash
+設定 Flash style(success,info,warning,danger)
+* https://stackoverflow.com/questions/57660542/flask-closing-flash-message
+* https://greyli.com/flask-set-let-flash-message-supports-a-bootstrap-message-style/
+
+Bootstrap navbar
+* https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+* [利用 Bootstrap Grid System 排版的學習筆記](https://cythilya.github.io/2015/04/07/bootstrap-grid-system/)
+* https://getbootstrap.com/docs/3.4/css/
+* [Bootstrap 的圖示](https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp)
 
 ## 第五章 資料庫
+
+選資料庫
+* Relation Data Model: PostgreSQL,...
+* Document Data Model: MongoDB,...
+* Graph Data Model: [Neo4j](#Ref),...
 
 
 Database
@@ -90,13 +191,16 @@ Database
 * MongoDB : document-oriented database 
 * CouchDB : document-oriented NoSQL database,by Apache
 * DynamoDB : document-oriented NoSQL database,by Amazon, AWS
+* Neo4j : Graph database,written by Java
+
+Flask-SQLAlchemy
 
 
 DataBase Migrate
-SQLAlchemy.Alembic
-https://alembic.sqlalchemy.org/en/latest/
-Flask-Migrate
-https://flask-migrate.readthedocs.io/en/latest/
+* SQLAlchemy.Alembic
+    * https://alembic.sqlalchemy.org/en/latest/
+* Flask-Migrate
+    * https://flask-migrate.readthedocs.io/en/latest/
 
 ## 第六章 Email
 
@@ -108,11 +212,7 @@ https://support.google.com/mail/answer/7126229?hl=zh-Hant
 https://www.youtube.com/watch?v=qqOgDPSD3jc&feature=youtu.be
 https://github.com/twtrubiks/Flask-Mail-example
 
-# 參考資料
-1. [作者 Miguel Grinberg 網站](blog.miguelgrinberg.com)
-2. [本書 github repo](https://github.com/miguelgrinberg/flasky)
-3. [Flask official site](https://flask.palletsprojects.com/)
-4. [Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+
 
 ## 第七章 大型的 App 結構
 
@@ -123,6 +223,14 @@ https://crackstation.net/hashing-security.htm
 
 
 
-[決戰熱蘭遮]: https://www.books.com.tw/products/0010773335 "決戰熱蘭遮"
-[熱蘭遮城日誌]: https://zh.wikipedia.org/wiki/%E7%86%B1%E8%98%AD%E9%81%AE%E5%9F%8E%E6%97%A5%E8%AA%8C "熱蘭遮城日誌"
+# Ref
+1. [作者 Miguel Grinberg 網站](blog.miguelgrinberg.com)
+2. [本書 github repo](https://github.com/miguelgrinberg/flasky)
+3. [Flask official site](https://flask.palletsprojects.com/)
+4. [Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+5. [前言-Flask Web 开发(第2版)](https://www.wrdll.com/article/flask-web-development-2nd-edition-preface "前言-Flask Web 开发(第2版)")
+6. [初探Neo4j - Graph Database](http://sj82516-blog.logdown.com/posts/5823130)
+
 [google]: https://www.google.com "Search Engine"
+[bootstrap]: http://getbootstrap.com "Twitter OSS template"
+[Flask-SQLAlchemy]: https://flask-sqlalchemy.palletsprojects.com/en/2.x/ ""
