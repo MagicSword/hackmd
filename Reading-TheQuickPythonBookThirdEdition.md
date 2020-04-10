@@ -30,7 +30,7 @@ The Quick Python Book Third Edition
 <!--more-->
 
 
-![Python 技術者們：練功！老手帶路教你精通正宗 Python 程式](https://www.books.com.tw/img/001/083/48/0010834816.jpg =50%x50%)
+![Python 技術者們：練功！老手帶路教你精通正宗 Python 程式](https://www.books.com.tw/img/001/083/48/0010834816.jpg =30%x30%)
 * [圖書資料](http://www.books.com.tw/products/0010834816)
 * 書名：Python 技術者們：練功！老手帶路教你精通正宗 Python 程式
 * 原文名稱：The Quick Python Book Third Edition
@@ -288,12 +288,134 @@ Task list: :smile:
 * BONUS PM2.5 空氣品質警報通知：簡訊+LINE (中文版獨家/旗標特製)
 * 收回
 
-# 導論
+# 第5章 基本資料結構：list、tuple、set
+
+## list
+
+* list = [0,1,2,3,...,n]
+* append(), extent(),insert(),del(),remove(),reverse()
+* list 排序 : 用 list.sort()
+* list 自定義排序
+    * 定義比較函式後，用 sort()的key參數，傳給函式
+    * def lenofchar(char): reuten len(char)
+    * list.sort(key=lenofchar)
+* sorted() : 會直接修改 list 的內容。
+    * sorted(list,reverse=True)
+* 其他操作
+    * 3 in [0,1,2,3]
+    * z = [0,1] + [2,3,4]
+    * z = [None] * 4 # [None,None,None,None]
+* 其他函式
+    * min(), max()
+    * index()
+    * count()
+    * len()
+    * sum()
+    * reverse()
+* 多維 list : [[1,2,3],[4,5,6],[7,8,9]]
+* deepcopy
+    * 一般的情形 copy  shallow = origin[:]
+    * 用 deepcopy: 
+    * import copy
+    * deep = copy.deepcopy(original)
+
+## tuple
+
+tuple 可視為不能修改的 list
+
+* tuple= ()
+* tuple auto unpack a,b = b,c
+* auto unpack 等號兩邊的變數要數量一樣
+* 若數量不一樣，可以用有 * 的變數吸收多餘的變數
+    * x = (1,2,3,4)
+    * a,b,c* = x
+    * a,b,_* = x
+* list(),tuple() 造出新的 list,tuple
+
+## set
+
+* set = {} , 集合中的元素唯一，無序
+* 聯集(or)|，交集(and)&，差集(xor)^
+* add(),remove()
+* frozenset :  frozenset(set()) ，不可變的集合
+
+# 第6章 字串
+
+* 字串常用函式
+    * split(),join()
+    * inf(),float()
+    * strip(), lstrip(),rstrip()
+    * isdigit(), isalpha(),islower(),isupper()
+    * find(),rfind(),index(),rindex()
+    * count()
+    * startwith(),endwith()
+* 字串修改
+    * replace()
+    * maketrans(),translate()
+    * lower(),upper(),capitalize(),title(),swapcase(),expandtabs()
+    * ljust(),rjust(),center(),zfill()
+    * 把 string -> list , 再用 list 的函式來操作字串
+    * repr(),str()
+
+## 6.8 String formating
+1. old style % formating
+2. format()
+3. f-string
+
+## 6.11 Byte object
+
+byte 數位資料 與 unicode 字串的轉換(encode)
+
+## 第7章 字典
+
+* dict = {key:value,key2:value2,...}
+* 基本的 dict 自動排序，不能指定順序。
+* 另有 collections.OrderedDict，或是改用 list
+
+dict 常用 函式
+* keys(),values(),items()
+* get(), setdefault()
+* copy(),update()
+* len(),del,in
+
+## 第八章 流程控制
+
+* while
+* 迴圈中常用的 break, continue
+* if-elif-else
+* for
+* ranger(): 跑迴圈固定次數
+* enumerate()：iterate item in list,tuple
+* zip():combine two container in one , ex: z = zip(list1,list2)
+* 生成式 comprehension：用特定的公式產生 list,dict,...
+* 產生器 generator：for 迴圈的產生元素
+* statement,block,indent
+
+## 第九章 函式
+
+## 第11章 Python 程式檔
+
+打包程式
+* wheels: 打包 、發佈
+* zipapp: 直接把主程式、模組包成一個 zip, pex
+* py2exe,py2app: 打包成單獨執行檔
+* freeze: 把 python 編成機器碼
+
+## 第12章 使用檔案系統
+
+* os, os.path, pathlib
+
+## 第13章 檔案讀寫
+
+* 開檔，encoding, r,w,a模式
+* 文字、或二進位
+* struct, pickling,shelve
+
+# 第三章 進階
 
 
+發布
 
-
- 
 # 參考資料
 1. [Book site](https://www.flag.com.tw/bk/t/f9749)
 2. [從做中學 Learning by doing](https://www.facebook.com/flaglearningbydoing/)
